@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ТензоТехСервис</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stylemedia.css" rel="stylesheet" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/sliderindex.js"></script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+            $("#slides").slides("play");
+        });
+    </script>
+    <script>
+        $( document ).ready(function() {
+            $("#menuleft").stick_in_parent()
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="center">
+
+    <div class="menuleft" id="menuleft">
+        <div class="logo"></div>
+        <div class="city">Казань</div>
+        <ul>
+            <li><a href="#" class="white">Оборудование</a>
+                <ul>
+                    <h1>УСЛУГИ</h1>
+                    <li><a href="#">Автоматизация БСУ, РБУ</a></li>
+                    <li><a href="#">Полное название услуги</a></li>
+                    <li><a href="#">Полное название услуги номер 1</a></li>
+                    <li><a href="#">Не полное название</a></li>
+                    <li><a href="#">Полное название</a></li>
+                    <li><a href="#">Услуга</a></li>
+                    <li><a href="#">Услуга номер четыре</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="white">Услуги</a></li>
+            <li><a href="#" class="white">Проекты</a></li>
+            <li><a href="#" class="white">Готовые решения</a></li>
+            <li><a href="#" class="grey">Цены и склад</a></li>
+            <li><a href="#" class="grey">Акции</a></li>
+            <li><a href="#" class="grey">Компания</a></li>
+        </ul>
+        <input class="search" placeholder="Поиск" >
+    </div>
+    <div class="mainright">
+        <div class="topmenu">
+            <a href="#" id="menu0" class="activea"><text>Реконструкция</text></br><text>и модернизация</text></a>
+            <a href="#" id="menu1"><text>Автоматизация</text><br><text>процессов</text></a>
+            <a href="#" id="menu2"><text>Оборудование для</text><br><text>поизводства ЖБИ</text></a>
+            <a href="#" id="menu3"><text>Бетонные заводы</text><br><text>и комплектующие</text></a>
+            <div class="butt">
+                <a href="#" id="prewbutton2"><img src="images/left-butt-slide.png"></a>
+                <a href="#" id="nextbutton2"><img src="images/right-butt-slide.png"></a>
+            </div>
+        </div>
+        <div id="slider-wrap">
+            <div id="slider">
+
+                <div class="slide">
+                    <div class="background_index_slide"><img src="images/background_line_1.jpg" width="100%"> </div>
+                    <div class="white">
+                        <h1>Реконструкция<br>и модернизация бетонных заводов</h1>
+                        <hr>
+                        <h2>Cовокупность методов и средств, предназначенная для реализации системы или систем, позволяющих осуществлять управление самим технологическим процессом.</h2>
+                    </div>
+                    <a href="#" class="buttgreen">ПОДРОБНЕЕ</a>
+                    <div class="more">
+                        <div class="services">
+                            <text>Услуги:</text>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/servises_img_1.png"></div>
+                                <div class="text">Комплексная<br>модернизация БСУ</div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/servises_img_2.png"></div>
+                                <div class="text">Перевод дозаторов<br>на тензометрию </div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/servises_img_3.png"></div>
+                                <div class="text">Обследование объектов</div>
+                            </div>
+                        </div>
+                        <div class="equipment">
+                            <text>Оборудование:</text>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/equipment_img.png"></div>
+                                <div class="text">Дозаторы компонентов</div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/equipment_img.png"></div>
+                                <div class="text">Исполнительные механизмы</div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/equipment_img.png"></div>
+                                <div class="text">Пневматика</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lineservices">
+                        <div class="block1">
+                            <div class="img"><img src="images/lineservices_img1.png"> </div>
+                            <div class="text">Дозатор инертных материалов</div>
+                            <div class="money">192 000 <text>Р</text></div>
+                        </div>
+                        <div class="block2">
+                            <div class="img"><img src="images/lineservices_img2.png"></div>
+                            <div class="text">Тензодатчик Ы-образный НПВ 1000кг</div>
+                            <div class="money">4 200 Р</div>
+                        </div>
+                        <div class="block3">
+                            <div class="img"><img src="images/lineservices_img3.png"></div>
+                            <div class="text">Пережимной клапан ДУ100</div>
+                            <div class="money">84 200 Р</div>
+                        </div>
+                    </div>
+                    <center><a href="#" class="allbutt">ПОКАЗАТЬ ВСЕ ОБОРУДОВАНИЕ</a></center>
+                </div>
+
+                <div class="slide">
+                    <div class="background_index_slide"><img src="images/background_line_2.jpg" width="100%"> </div>
+                    <div class="white">
+                        <h1>Реконструкция<br>и модернизация бетонных заводов</h1>
+                        <hr>
+                        <h2>Cовокупность методов и средств, предназначенная для реализации системы или систем, позволяющих осуществлять управление самим технологическим процессом.</h2>
+                    </div>
+                    <a href="#" class="buttgreen">ПОДРОБНЕЕ</a>
+                    <div class="more">
+                        <div class="services">
+                            <text>Услуги:</text>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/servises_img_2.png"></div>
+                                <div class="text">Комплексная<br>модернизация БСУ</div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/servises_img_2.png"></div>
+                                <div class="text">Перевод дозаторов<br>на тензометрию </div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/servises_img_3.png"></div>
+                                <div class="text">Обследование объектов</div>
+                            </div>
+                        </div>
+                        <div class="equipment">
+                            <text>Оборудование:</text>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/equipment_img.png"></div>
+                                <div class="text">Дозаторы компонентов</div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/equipment_img.png"></div>
+                                <div class="text">Исполнительные механизмы</div>
+                            </div>
+                            <div class="imgtext">
+                                <div class="img"><img src="images/equipment_img.png"></div>
+                                <div class="text">Пневматика</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lineservices">
+                        <div class="block1">
+                            <div class="img"><img src="images/lineservices_img1.png"> </div>
+                            <div class="text">Дозатор инертных материалов</div>
+                            <div class="money">192 000 <text>Р</text></div>
+                        </div>
+                        <div class="block2">
+                            <div class="img"><img src="images/lineservices_img2.png"></div>
+                            <div class="text">Тензодатчик Ы-образный НПВ 1000кг</div>
+                            <div class="money">4 200 Р</div>
+                        </div>
+                        <div class="block3">
+                            <div class="img"><img src="images/lineservices_img3.png"></div>
+                            <div class="text">Пережимной клапан ДУ100</div>
+                            <div class="money">84 200 Р</div>
+                        </div>
+                    </div>
+                    <center><a href="#" class="allbutt">ПОКАЗАТЬ ВСЕ ОБОРУДОВАНИЕ</a></center>
+                </div>
+                <div class="slide">
+                    <div class="background_index_slide"><img src="images/background_line_1.jpg" width="100%"></div>
+                </div>
+                <div class="slide">
+                    <div class="background_index_slide"><img src="images/background_line_2.jpg" width="100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="center">
+    <div class="leftblock">
+        <h1>ТензоТехСервис</h1>
+        <hr>
+        <h2>Компания ООО «ТензоТехСервис» была основана в 2005 году. Сегодня это мощное, современное, многопрофильное предприятие полного цикла.</h2>
+        <a href="#" class="buttgreen">ПОДРОБНЕЕ О КОМПАНИИ</a>
+    </div>
+    <div class="rightblock">
+        <div class="butt">
+            <a href="#" class="prewbutton" id="prewbutton"><img src="images/quantity_left.png"></a>
+            <a href="#" class="nextbutton" id="nextbutton"><img src="images/quantity_right.png"></a>
+        </div>
+        <div id="slider-wraptwo">
+            <div id="slidertwo">
+
+                <div class="slidetwo">
+                    <div class="backgroundtext">420</div>
+                    <div class="quantity">
+                        <div class="left"><br>50</div>
+                        <div class="centertext">420<br><div class="text">ВЫПОЛЕННЫХ<br>ПРОЕКТОВ</div></div>
+                        <div class="right"><br>234</div>
+                    </div>
+                </div>
+                <div class="slidetwo">
+                    <div class="backgroundtext">234</div>
+                    <div class="quantity">
+                        <div class="left"><br>420</div>
+                        <div class="centertext">234<br><div class="text">ВЫПОЛЕННЫХ<br>ПРОЕКТОВ</div></div>
+                        <div class="right"><br>50</div>
+                    </div>
+                </div>
+                <div class="slidetwo">
+                    <div class="backgroundtext">50</div>
+                    <div class="quantity">
+                        <div class="left"><br>234</div>
+                        <div class="centertext">50<br><div class="text">ВЫПОЛЕННЫХ<br>ПРОЕКТОВ</div></div>
+                        <div class="right"><br>420</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="slideandtext">
+        <div class="leftblock">
+            <h1>Актуальные акции</h1>
+            <hr>
+        </div>
+        <div class="leftblock">
+
+        </div>
+        <div class="slidershares">
+
+
+            <!-- start SlidesJS slideshow -->
+            <div id="slides">
+
+                <div class="slideline">
+                    <div class="left">
+                        <div class="textbig">Бетонный завод</div>
+                        <div class="text">50м3/час с б/с SICOMA</div>
+                        <div class="money">7 900 000 Р</div>
+                        <a href="#" class="buttgreen">УЗНАТЬ ПОДРОБНЕЕ</a>
+                    </div>
+                    <div class="right">
+                        <img src="images/slide_1_img.jpg" height="100%">
+                        <div class="action"></div>
+                    </div>
+                </div>
+                <div class="slideline">
+                    <div class="left">
+                        <div class="textbig">Бетонный завод</div>
+                        <div class="text">50м3/час с б/с SICOMA</div>
+                        <div class="money">7 900 000 Р</div>
+                        <a href="#" class="buttgreen">УЗНАТЬ ПОДРОБНЕЕ</a>
+                    </div>
+                    <div class="right">
+                        <img src="images/slide_1_img.jpg" height="100%">
+                        <!--<div class="action"></div>-->
+                    </div>
+                </div>
+
+            </div>
+            <!-- end SlidesJS  slideshow -->
+
+            <!-- Example play/stop controls -->
+            <!--<a href="#" class="controls" id="clickcontrols">Play</a>-->
+
+            <!-- Example slide count -->
+            <!--<p class="current_slide"></p>-->
+        </div>
+    </div>
+    <div class="tree">
+        <div class="text"> <bold>ТЕНЗОТЕХСЕРВИС </bold>  / ПРОЕКТЫ </div>
+    </div>
+    <div class="leftblock">
+        <h1>Выполненные проекты</h1>
+        <hr>
+    </div>
+    <div class="leftblock">
+
+    </div>
+    <div class="projects">
+        <div class="project">
+           <div class="img"> <a href="#"><div class="cursor"></div><img src="images/project_img_1.png"></a></div>
+            <div class="text"><bold>Комплексная модернизация завода ЖБИ-3</bold> Апрель 2003 Тюмень</div>
+        </div>
+
+        <div class="project">
+            <div class="img"> <a href="#"><div class="cursor"></div><img src="images/project_img_2.png"></a></div>
+            <div class="text"><bold>Модернизация цементного склада</bold> <br>Апрель 2003 Ярославль</div>
+        </div>
+
+        <div class="project">
+            <div class="img"> <a href="#"><div class="cursor"></div><img src="images/project_img_3.png"></a></div>
+            <div class="text"><bold>Автоматизация адресной подачи бетона на заводе ЖБИ</bold> </div>
+        </div>
+
+
+    </div>
+
+</div>
+<div id="map"><center><a href="#" class="buttgreen">ПОКАЗАТЬ ПРОЕКТЫ НА КАРТЕ</a> </center></div>
+<div id="bottommenu">
+    <div class="center">
+        <div class="menu">
+            <a href="#">КОМПАНИЯ</a>
+            <ul>
+                <li><a href="#"> О компании</a></li>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href="#">Принципы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">ПОМОЩЬ ПО САЙТУ</a>
+            <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">База знаний</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">СПЕЦИАЛЬНЫЕ УСЛОВИЯ</a>
+            <ul>
+                <li><a href="#">Акции и скидки</a></li>
+                <li><a href="#">Склады и цены</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">УСЛУГИ</a><br><br>
+            <a href="#">ОБОРУДОВАНИЕ</a><br><br>
+            <a href="#">ПРОЕКТЫ</a><br><br>
+            <a href="#">ГОТОВЫЕ РЕШЕНИЯ</a>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+
+    <div class="center">
+        <div class="developers">
+            <div class="logo"></div>
+            <div class="text">Разработка сайта</br> Жуков и Архангельский</div>
+        </div>
+        <div class="logo"></div>
+        <div class="telephone">+7 (843) 554-45-45<br><text>г. Казань, ул. Вахитова 10</text></div>
+    </div>
+</div>
+
+</body>
+</html>

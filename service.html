@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ТензоТехСервис</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stylemedia.css" rel="stylesheet" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/slides2.js"></script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides2").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides2").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+            $("#slides2").slides("play");
+        });
+    </script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides3").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides3").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+            $("#slides3").slides("play");
+        });
+    </script>
+</head>
+
+<body>
+<div id="background_line_2"></div>
+<div id="center">
+    <div class="menuleft">
+        <div class="logo"></div>
+        <div class="city">Казань</div>
+        <ul>
+            <li><a href="#" class="white">Оборудование</a>
+                <ul>
+                    <h1>УСЛУГИ</h1>
+                    <li><a href="#">Автоматизация БСУ, РБУ</a></li>
+                    <li><a href="#">Полное название услуги</a></li>
+                    <li><a href="#">Полное название услуги номер 1</a></li>
+                    <li><a href="#">Не полное название</a></li>
+                    <li><a href="#">Полное название</a></li>
+                    <li><a href="#">Услуга</a></li>
+                    <li><a href="#">Услуга номер четыре</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="white">Услуги</a></li>
+            <li><a href="#" class="white">Проекты</a></li>
+            <li><a href="#" class="white">Готовые решения</a></li>
+            <li><a href="#" class="grey">Цены и склад</a></li>
+            <li><a href="#" class="grey">Акции</a></li>
+            <li><a href="#" class="grey">Компания</a></li>
+        </ul>
+        <input class="search" placeholder="Поиск" >
+    </div>
+    <div class="mainright">
+        <div class="treewhite">
+            <div class="text"> <bold>ТЕНЗОТЕХСЕРВИС </bold>  / УСЛУГИ  /  АВТОМАТИЗАЦИЯ ПРОЦЕССОВ </div>
+        </div>
+
+        <div class="white">
+            <h1>Автоматизация БСУ, РБУ</h1>
+            <hr>
+            <h2>Не секрет, что основным этапом реконструкции будет внедрение АСУ ТП на заводе. Система автоматизации SmartMix рассчитана на разные типы и конфигурации производств бетонной смеси: от небольших предприятий с одним смесителем, до крупных домостроительных комбинатов</h2>
+            <h2><bold>Перечень мероприятий, производимых в процессе оказания услуг:</bold></h2>
+            <ol class="whiteol">
+                <li>Дефектовка и обследование исполнительных механизмов.</li>
+                <li>Разработка ТЗ на автоматизацию процесса.</li>
+                <li>Написание программного обеспечения по ТЗ.</li>
+                <li>Сборка шкафа управления на базе промышленных контроллеров WAGO.</li>
+                <li>Подключение исполнительных механизмов к шкафу управления.</li>
+                <li>Установка программного обеспечения на персональный компьютер.</li>
+                <li>Обучение персонала заказчика работе и настройке системы, работе в режиме «Тренажер».</li>
+                <li>Выдача продукции, удовлетворяющей ГОСТам, в течение смены.</li>
+                <li>Информационная и техническая поддержка системы</li>
+            </ol>
+
+        </div>
+
+        <ul class="ul"><bold>SmartMix включает в себя:</bold>
+            <li>Шкафы автоматизарованной системы управления</li>
+            <li>Комплект токовых датчиков и преобразователей</li>
+            <li>Панели заявок бетонной смеси</li>
+            <li>SmartMix рабочее места оператора</li>
+            <li>SmartMixLab рабочее места лаборанта</li>
+            <li>SmartMixSupervisor рабочее места диспетчера</li>
+        </ul>
+        <div class="slidershares2">
+            <div class="slides"  id="slides2">
+                <div class="sli">
+                    <img src="images/slider2_img_1.jpg" height="100%">
+                    <div class="text">Подпись под фотографией</div>
+                </div>
+
+                <div class="sli">
+                    <img src="images/slider2_img_1.jpg" height="100%">
+                    <div class="text">Подпись под фотографией</div>
+                </div>
+
+            </div>
+        </div>
+        <ul class="ul"><bold>Преимущества установки системы SmartMix</bold>
+            <li>Уникальная система дозирования SmartDose</li>
+            <li>Адаптивная подстройка исполнительных механизмов к свойству материала</li>
+            <li>Перерасчет параметров дозирования «на лету»</li>
+            <li>Автоматическая корректировка очередного замеса по результатам  предыдущего</li>
+            <li>Возможность дозирования одного компонента из нескольких бункеров</li>
+            <li>Возможность отключения/переключения бункеров во время дозирования</li>
+            <li>Начало дозирования следующего замеса пока идет перемешивание предыдущего</li>
+            <li>Наличие журнала событий и аварий</li>
+            <li>4 режима работы (Автоматический, полуавтоматический, ручной, тренажер)</li>
+            <li>Развернутая система отчетности</li>
+            <li>Выгрузка отчетов в формате Excel</li>
+            <li>Выполнения нескольких заявок одновременно</li>
+            <li>Неограниченное количество рецептов;</li>
+            <li>Возможность интеграции с 1С</li>
+            <li>Отслеживание нагрузки на смеситель с визуализацией в виде графика;</li>
+            <li>Интуитивно понятный интерфейс;</li>
+            <li>Анимация всех выполняемых процессов</li>
+            <li>Масштабируемость (изменение конфигурации, количества линий, подключение панелей заявок и дополнительных рабочих мест)</li>
+            <li>Защита оборудования от неверных действия оператора</li>
+            <li>Контроль состояния оборудования</li>
+            <li>Европейский стандарт качества</li>
+            <li>Система строится на базе немецкого оборудования</li>
+            <li>Сертификат соответствия ГОСТ Р</li>
+            <li>Проходит 3 этапа тестирования перед установкой</li>
+            <li>Высокая серийность (около 50 систем в год)</li>
+        </ul>
+        <div class="slidershares2">
+            <div class="slides"  id="slides3">
+                <div class="sli">
+                    <img src="images/slider2_img_1.jpg" height="100%">
+                </div>
+                <div class="sli">
+                    <img src="images/slider2_img_1.jpg" height="100%">
+                </div>
+
+            </div>
+        </div>
+        <ul class="ul"><bold>Результаты автоматизации:</bold>
+            <br><br>
+            <li><bold>Эффективность производства</bold><br>Увеличение производительности до 30%<br>Исключение перерасхода материалов<br>сокращение времени выполнения заявки</li>
+            <br>
+            <li><bold>Оптимизация </bold><br>Сокращение количества персонала<br>Защита от неверных действия оператора<br>Исключение человеческого фактора на всех этапах</li>
+            <br>
+            <li><bold>Строгое соблюдение заданной рецептуры бетонной смеси</bold></li>
+            <br>
+            <li><bold>Погрешность дозирования не более 1%</bold></li>
+            <br>
+            <li><bold>Оперативная техподдержка 24/7</bold><br>
+                В течение всего гарантийного срока предоставляется бесплатная техническая   	  поддержка по телефону, либо по удаленному подключению через интернет</li>
+        </ul>
+        <hr class="widthmax">
+    </div>
+    <div class="projects">
+        <div class="project">
+            <h1><textblack>Эти услуги вам<br>будут интересны</textblack></h1>
+            <hr>
+            <ul class="menu">
+                <li><a href="#">Весовые терминалы и модули</a></li>
+                <li><a href="#">Бетоносмесители и скипы</a></li>
+                <li><a href="#">Автобетонораздатчик</a></li>
+                <li><a href="#">Датчики уровня</a></li>
+                <li><a href="#">Конвейеры</a></li>
+                <li><a href="#">Дробильно-сортировочное</a></li>
+                <li><a href="#">оборудование</a></li>
+                <li><a href="#">Аэрация цемента</a></li>
+            </ul>
+
+        </div>
+
+        <div class="project">
+            <h1><textblack>Рекомендуем<br>оборудование</textblack></h1>
+            <hr>
+            <ul>
+                <li><a href="#">Весовые терминалы и модули</a></li>
+                <li><a href="#">Бетоносмесители и скипы</a></li>
+                <li><a href="#">Автобетонораздатчик</a></li>
+            </ul>
+
+        </div>
+
+        <div class="project">
+            <h1><textblack>Отзыв<br>клиента</textblack></h1>
+            <hr>
+            <div class="otziv">
+                <div class="logo"><img src="images/logo_otziv.png"></div>
+                <div class="name">ООО «Биктон»</div>
+                <div class="about">По сути, пенобетон это материал, изготовленный в кустарных, а не в заводских условиях. Например, стена…</div>
+                <div class="about">2014</div>
+                <a href="#" class="all">Раскрыть отзыв</a>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="leftblock">
+        <h1><textblack>Готовые решения</textblack></h1>
+        <hr>
+    </div>
+    <div class="leftblock">
+
+    </div>
+    <div class="lineservices">
+        <div class="block1">
+            <div class="img"><img src="images/lineservices_img1.png"> </div>
+            <div class="text">Дозатор инертных материалов</div>
+            <div class="money">192 000 <text>Р</text></div>
+        </div>
+        <div class="block2">
+            <div class="img"><img src="images/lineservices_img2.png"></div>
+            <div class="text">Тензодатчик Ы-образный НПВ 1000кг</div>
+            <div class="money">4 200 Р</div>
+        </div>
+        <div class="block2">
+            <div class="img"><img src="images/lineservices_img2.png"></div>
+            <div class="text">Тензодатчик Ы-образный НПВ 1000кг</div>
+            <div class="money">4 200 Р</div>
+        </div>
+        <div class="block3">
+            <div class="img"><img src="images/lineservices_img3.png"></div>
+            <div class="text">Пережимной клапан ДУ100</div>
+            <div class="money">84 200 Р</div>
+        </div>
+
+    </div>
+    <div class="leftblock">
+        <h1><textblack>Выполненные проекты</textblack></h1>
+        <hr>
+    </div>
+    <div class="leftblock">
+
+    </div>
+    <div class="projects">
+        <div class="project">
+            <div class="img"><img src="images/project_img_1.png"></div>
+            <div class="text"><bold>Комплексная модернизация завода ЖБИ-3</bold> Апрель 2003 Тюмень</div>
+        </div>
+
+        <div class="project">
+            <div class="img"><img src="images/project_img_2.png"></div>
+            <div class="text"><bold>Модернизация цементного склада</bold> <br>Апрель 2003 Ярославль</div>
+        </div>
+
+        <div class="project">
+            <div class="img"><img src="images/project_img_3.png"></div>
+            <div class="text"><bold>Автоматизация адресной подачи бетона на заводе ЖБИ</bold> </div>
+        </div>
+
+
+    </div>
+    <form class="bigform" method="post" action="#">
+        <div class="left">
+            <div class="bigtext">Заявка № 217</div>
+            <div class="img"><img src="images/photo_form.png"> </div>
+            <div class="name">Константин Константинопольский</div>
+            <div class="work">менеджер по работе с клиентами</div>
+        </div>
+        <div class="right">
+            <h1>Не нашли нужную услугу?<br>Не беда!</h1>
+            <h2>Наш менеджер свяжется с вами в течение 1-го рабочего дня</h2>
+            <hr>
+            <div class="leftinput">
+                <input type="text" class="img1" placeholder="Ваше имя">
+                <input type="text" class="img2" placeholder="Номер телефона">
+                <input type="text" class="img3" placeholder="Электронная почта">
+                <input type="text" class="img4" placeholder="Город">
+            </div>
+            <div class="rightinput">
+                <textarea placeholder="Комментарий"></textarea>
+                <center><a href="#" class="buttgreen">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</a></center>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<div id="bottommenu">
+    <div class="center">
+        <div class="menu">
+            <a href="#">КОМПАНИЯ</a>
+            <ul>
+                <li><a href="#"> О компании</a></li>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href="#">Принципы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">ПОМОЩЬ ПО САЙТУ</a>
+            <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">База знаний</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">СПЕЦИАЛЬНЫЕ УСЛОВИЯ</a>
+            <ul>
+                <li><a href="#">Акции и скидки</a></li>
+                <li><a href="#">Склады и цены</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">УСЛУГИ</a><br><br>
+            <a href="#">ОБОРУДОВАНИЕ</a><br><br>
+            <a href="#">ПРОЕКТЫ</a><br><br>
+            <a href="#">ГОТОВЫЕ РЕШЕНИЯ</a>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+
+    <div class="center">
+        <div class="developers">
+            <div class="logo"></div>
+            <div class="text">Разработка сайта</br> Жуков и Архангельский</div>
+        </div>
+        <div class="logo"></div>
+        <div class="telephone">+7 (843) 554-45-45<br><text>г. Казань, ул. Вахитова 10</text></div>
+    </div>
+</div>
+
+</body>
+</html>

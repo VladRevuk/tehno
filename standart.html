@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ТензоТехСервис</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stylemedia.css" rel="stylesheet" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/slides2.js"></script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides2").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides2").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+
+            $("#slides2").slides("play");
+        });
+    </script>
+</head>
+
+<body>
+<div id="center">
+    <div class="menuleft">
+        <div class="logo"></div>
+        <div class="city">Казань</div>
+        <ul>
+            <li><a href="#" class="white">Оборудование</a>
+                <ul>
+                    <h1>УСЛУГИ</h1>
+                    <li><a href="#">Автоматизация БСУ, РБУ</a></li>
+                    <li><a href="#">Полное название услуги</a></li>
+                    <li><a href="#">Полное название услуги номер 1</a></li>
+                    <li><a href="#">Не полное название</a></li>
+                    <li><a href="#">Полное название</a></li>
+                    <li><a href="#">Услуга</a></li>
+                    <li><a href="#">Услуга номер четыре</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="white">Услуги</a></li>
+            <li><a href="#" class="white">Проекты</a></li>
+            <li><a href="#" class="white">Готовые решения</a></li>
+            <li><a href="#" class="grey">Цены и склад</a></li>
+            <li><a href="#" class="grey">Акции</a></li>
+            <li><a href="#" class="grey">Компания</a></li>
+        </ul>
+        <input class="search" placeholder="Поиск" >
+    </div>
+    <div class="mainright">
+        <div class="tree">
+            <div class="text"> <bold>ТЕНЗОТЕХСЕРВИС </bold> / ТИПОВАЯ СТРАНИЦА </div>
+        </div></br></br></br></br></br></br>
+
+        <div class="widthmax">
+            <h1><textblack>Новость. Статья. Статическая страница.</textblack></h1>
+            <hr>
+        </div>
+        </br></br></br></br></br></br>
+        <p>Простой текст p. Частичная или полная (в зависимости от его состояния) разборка деревянного настила, демонтаж рычажной системы, циферблатного указателя, основных опорных стоек и башмаков.
+        <p><textitalic>Выносной текст курсивом. Реконструкция производится двумя способами при 	условиях: рама весов, стяжка, основные тумбы, стенки и подъездные пути 	приямка находятся в удовлетворительном состоянии..</textitalic></p>
+        <h4>Заголовок h4</h4>
+        <p>Частичная или полная (в зависимости от его состояния) разборка деревянного настила, демонтаж рычажной системы, циферблатного указателя, основных опорных стоек и башмаков. Установка на места основных опорных тумб, специальных металлических стоек, под необходимую высоту для установки датчиков, либо изготовлением.</p>
+        <div class="slidershares2">
+            <div class="slides"  id="slides2">
+                <div class="sli">
+                    <img src="images/slider2_img_2.jpg" height="100%">
+                    <div class="text">Подпись под фотографией</div>
+                </div>
+
+                <div class="sli">
+                    <img src="images/slider2_img_2.jpg" height="100%">
+                    <div class="text">Подпись под фотографией</div>
+                </div>
+
+            </div>
+        </div>
+
+        <p>Нумерованный список</p>
+        <ol class="blackol">
+            <li>класс точности III (средний) (по ГОСТ 53228-2008);</li>
+            <li>высокая точность измерения (до 6000 делений отсчёта);</li>
+            <li>диапазон рабочих температур: от - 30 до + 40оС;</li>
+            <li>оснащение оборудованием признанных мировых брендов (Ascellsensor, HBM, CAS);</li>
+            <li>расчет будущей рамы весов на нагрузку 18 тонн на ось и более;</li>
+        </ol>
+        <h4>Заголовок h4</h4>
+        <p>Частичная или полная (в зависимости от его состояния) разборка деревянного настила, демонтаж рычажной системы, циферблатного указателя, основных опорных стоек и башмаков. Установка на места основных <a href="#">опорных тумб</a>, специальных металлических стоек, под необходимую высоту для установки датчиков, либо изготовлением.</p>
+        <h4>Файлы для скачивания</h4>
+        <div class="download">
+            <div class="block">
+                <img src="images/pdf.png">
+                <a href="#">Какой-то_PDF_документ.pdf</a>
+            </div>
+            <div class="block">
+                <img src="images/zip.png">
+                <a href="#">Какой-то_ZIP_файл.zip</a>
+            </div>
+            <div class="block">
+                <img src="images/doc.png">
+                <a href="#">Какой-то_DOC_файл.doc</a>
+            </div>
+
+        </div>
+        <div class="backtonews"><a href="#">Вернуться к новостям</a> </div>
+        <hr class="widthmax">
+    </div>
+    <div class="projects">
+        <div class="project">
+            <h1><textblack>Эти услуги вам<br>будут интересны</textblack></h1>
+            <hr>
+            <ul class="menu">
+                <li><a href="#">Весовые терминалы и модули</a></li>
+                <li><a href="#">Бетоносмесители и скипы</a></li>
+                <li><a href="#">Автобетонораздатчик</a></li>
+                <li><a href="#">Датчики уровня</a></li>
+                <li><a href="#">Конвейеры</a></li>
+                <li><a href="#">Дробильно-сортировочное</a></li>
+                <li><a href="#">оборудование</a></li>
+                <li><a href="#">Аэрация цемента</a></li>
+            </ul>
+
+        </div>
+
+        <div class="project">
+            <h1><textblack>Рекомендуем<br>оборудование</textblack></h1>
+            <hr>
+            <ul>
+                <li><a href="#">Весовые терминалы и модули</a></li>
+                <li><a href="#">Бетоносмесители и скипы</a></li>
+                <li><a href="#">Автобетонораздатчик</a></li>
+            </ul>
+
+        </div>
+
+        <div class="project">
+            <h1><textblack>Отзыв<br>клиента</textblack></h1>
+            <hr>
+            <div class="otziv">
+                <div class="logo"><img src="images/logo_otziv.png"></div>
+                <div class="name">ООО «Биктон»</div>
+                <div class="about">По сути, пенобетон это материал, изготовленный в кустарных, а не в заводских условиях. Например, стена…</div>
+                <div class="about">2014</div>
+                <a href="#" class="all">Раскрыть отзыв</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<div id="bottommenu">
+    <div class="center">
+        <div class="menu">
+            <a href="#">КОМПАНИЯ</a>
+            <ul>
+                <li><a href="#"> О компании</a></li>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href="#">Принципы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">ПОМОЩЬ ПО САЙТУ</a>
+            <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">База знаний</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">СПЕЦИАЛЬНЫЕ УСЛОВИЯ</a>
+            <ul>
+                <li><a href="#">Акции и скидки</a></li>
+                <li><a href="#">Склады и цены</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">УСЛУГИ</a><br><br>
+            <a href="#">ОБОРУДОВАНИЕ</a><br><br>
+            <a href="#">ПРОЕКТЫ</a><br><br>
+            <a href="#">ГОТОВЫЕ РЕШЕНИЯ</a>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+
+    <div class="center">
+        <div class="developers">
+            <div class="logo"></div>
+            <div class="text">Разработка сайта</br> Жуков и Архангельский</div>
+        </div>
+        <div class="logo"></div>
+        <div class="telephone">+7 (843) 554-45-45<br><text>г. Казань, ул. Вахитова 10</text></div>
+    </div>
+</div>
+
+</body>
+</html>

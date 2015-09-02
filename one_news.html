@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ТензоТехСервис</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stylemedia.css" rel="stylesheet" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/slides2.js"></script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides2").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides2").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+
+            $("#slides2").slides("play");
+        });
+    </script>
+</head>
+
+<body>
+<div id="center">
+    <div class="menuleft">
+        <div class="logo"></div>
+        <div class="city">Казань</div>
+        <ul>
+            <li><a href="#" class="white">Оборудование</a>
+                <ul>
+                    <h1>УСЛУГИ</h1>
+                    <li><a href="#">Автоматизация БСУ, РБУ</a></li>
+                    <li><a href="#">Полное название услуги</a></li>
+                    <li><a href="#">Полное название услуги номер 1</a></li>
+                    <li><a href="#">Не полное название</a></li>
+                    <li><a href="#">Полное название</a></li>
+                    <li><a href="#">Услуга</a></li>
+                    <li><a href="#">Услуга номер четыре</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="white">Услуги</a></li>
+            <li><a href="#" class="white">Проекты</a></li>
+            <li><a href="#" class="white">Готовые решения</a></li>
+            <li><a href="#" class="grey">Цены и склад</a></li>
+            <li><a href="#" class="grey">Акции</a></li>
+            <li><a href="#" class="grey">Компания</a></li>
+        </ul>
+        <input class="search" placeholder="Поиск" >
+    </div>
+    <div class="mainright">
+        <div class="tree">
+            <div class="text"> <bold>ТЕНЗОТЕХСЕРВИС </bold> / КОМПАНИЯ  /  НОВОСТИ  / 2015 </div>
+        </div></br></br></br></br></br></br>
+
+        <div class="widthmax">
+            <h1><textblack>V Международная научно-практическая конференция</textblack></h1>
+            <hr>
+        </div>
+        </br></br></br></br></br></br>
+
+
+        <h4>30 июня – 3 июля 2015 г. в Казани состоится V Международная научно-практическая конференция «Развитие
+            крупнопанельного домостроения в России» InterConPan-2015.</h4>
+
+        <p>Организаторами конференции выступили АО «ЦНИИЭП жилища» и объединенная редакция журналов «Строительные
+                        материалы» и «Жилищное строительство» при поддержке Министерства строительства, архитектуры и
+            жилищно-коммунального хозяйства Республики Татарстан и группы компаний «АК БАРС Девелопмент»</p>
+
+        <div class="imgnews"><img src="images/one_news_img1.jpg"> </div>
+        <center><div class="imgtext">V Международная научно-практическая конференция</div></center>
+
+        <p>Участники конференции посетили Казанский ДСК и строительство жилого комплекса «Светлая Долина».
+            Состоялась поездка в Набережные Челны с посещением домостроительного комбината ООО «Домкор-Индустрия» и жилых районов «Замелекесье» и «Красные Челны».
+            <br><br>
+            На пленарном и секционных заседаниях конференции «InterConPan-2015» заслушано 49 докладов, посвященных конкретным вопросам модернизации действующих домостроительных предприятий, выбору технологического оборудования, снижению энергоемкости производства, применению новых и традиционных материалов и конструктивных решений при выпуске изделий КПД. </p>
+
+        <div class="imgnews"><img src="images/one_news_img2.jpg"> </div>
+
+        <p>На секции «Технология и оборудование предприятий ДСК и КПД» компания ТензоТехСервис представила свой доклад.
+            Директор ТензоТехСервис Анисимов Илья Владимирович на примере модернизации Тюменского «Завода ЖБИ-3» gоказал, что начинать модернизацию производства ЖБИ изделий необходимо с решения вопроса обеспечения новых технологий качественной бетонной смесью.
+        Рассказал о глубине проработки задачи модернизации БСУ компанией ТензоТехСервис.</p>
+
+        <h4>Посмотрите видеозапись доклада:</h4>
+
+        <div class="imgnews"><img src="images/one_news_img3.jpg"> </div>
+
+        <div class="backtonews"><a href="#">Вернуться к новостям</a> </div>
+        <hr class="widthmax">
+    </div>
+
+</div>
+
+
+
+<div id="bottommenu">
+    <div class="center">
+        <div class="menu">
+            <a href="#">КОМПАНИЯ</a>
+            <ul>
+                <li><a href="#"> О компании</a></li>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href="#">Принципы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">ПОМОЩЬ ПО САЙТУ</a>
+            <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">База знаний</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">СПЕЦИАЛЬНЫЕ УСЛОВИЯ</a>
+            <ul>
+                <li><a href="#">Акции и скидки</a></li>
+                <li><a href="#">Склады и цены</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">УСЛУГИ</a><br><br>
+            <a href="#">ОБОРУДОВАНИЕ</a><br><br>
+            <a href="#">ПРОЕКТЫ</a><br><br>
+            <a href="#">ГОТОВЫЕ РЕШЕНИЯ</a>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+
+    <div class="center">
+        <div class="developers">
+            <div class="logo"></div>
+            <div class="text">Разработка сайта</br> Жуков и Архангельский</div>
+        </div>
+        <div class="logo"></div>
+        <div class="telephone">+7 (843) 554-45-45<br><text>г. Казань, ул. Вахитова 10</text></div>
+    </div>
+</div>
+
+</body>
+</html>

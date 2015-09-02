@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ТензоТехСервис</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/stylemedia.css" rel="stylesheet" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/sliderindex.js"></script>
+    <script src="js/slides2.js"></script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides2").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides2").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+            $("#slides2").slides("play");
+        });
+    </script>
+    <script>
+
+        function currentSlide( current ) {
+            $(".current_slide").text(current + " of " + $("#slides3").slides("status","total") );
+        }
+
+        $(function(){
+            /*
+             Initialize SlidesJS
+             */
+            $("#slides3").slides({
+                navigateEnd: function( current ) {
+                    currentSlide( current );
+                },
+                loaded: function(){
+                    currentSlide( 1 );
+                }
+            });
+
+            $("#slides3").slides("play");
+        });
+    </script>
+    <script>
+        $( document ).ready(function() {
+            $("#menuleft").stick_in_parent()
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="center">
+
+    <div class="menuleft" id="menuleft">
+        <div class="logo"></div>
+        <div class="city">Казань</div>
+        <ul>
+            <li><a href="#" class="white">Оборудование</a>
+                <ul>
+                    <h1>УСЛУГИ</h1>
+                    <li><a href="#">Автоматизация БСУ, РБУ</a></li>
+                    <li><a href="#">Полное название услуги</a></li>
+                    <li><a href="#">Полное название услуги номер 1</a></li>
+                    <li><a href="#">Не полное название</a></li>
+                    <li><a href="#">Полное название</a></li>
+                    <li><a href="#">Услуга</a></li>
+                    <li><a href="#">Услуга номер четыре</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="white">Услуги</a></li>
+            <li><a href="#" class="white">Проекты</a></li>
+            <li><a href="#" class="white">Готовые решения</a></li>
+            <li><a href="#" class="grey">Цены и склад</a></li>
+            <li><a href="#" class="grey">Акции</a></li>
+            <li><a href="#" class="grey">Компания</a></li>
+        </ul>
+        <input class="search" placeholder="Поиск" >
+    </div>
+    <div class="mainright">
+        <div class="tree">
+            <div class="text"> <bold>ТЕНЗОТЕХСЕРВИС </bold>  / КОМПАНИЯ  /  О КОМПАНИИ </div>
+        </div>
+        </br></br></br></br></br></br>
+        <div class="widthmax">
+            <h1><textblack>О компании</textblack></h1>
+            <hr>
+        </div>
+        </br></br></br></br></br></br></br>
+
+        <div class="topmenu">
+            <a href="#" id="menu0" class="activea"><textblack>Презентация</textblack></a>
+            <a href="#" id="menu1"><textblack>Сотрудники</textblack></a>
+            <a href="#" id="menu2"><textblack>Отзывы</textblack></a>
+            <a href="#" id="menu3"><textblack>Контакты</textblack></a>
+            <div class="butt">
+                <a href="#" id="prewbutton2"><img src="images/navigation-previous.png"></a>
+                <a href="#" id="nextbutton2"><img src="images/navigation-next.png"></a>
+            </div>
+        </div>
+        <div id="slider-wrap">
+            <div id="slider">
+
+                <div class="slide">
+                    <div class="slidershares2">
+                        <div class="slides"  id="slides2">
+                            <div class="sli">
+                                <img src="images/slider2_img_1.jpg" height="100%">
+                                <div class="text">Подпись под фотографией</div>
+                            </div>
+
+                            <div class="sli">
+                                <img src="images/slider2_img_1.jpg" height="100%">
+                                <div class="text">Подпись под фотографией</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h4>История компании</h4>
+                    <p><nobold>В 2000 годах в РФ началось масштабное строительство жилого фонда. Уровень оснащения бетонных
+                          производств отставал на 20 лет и остро стоял вопрос модернизации предприятий. История компании ТТС началась в 2005 году с услуги по переводу дозаторов с рычажно-призменных механизмов взвешивания на высокоточные тензометрические датчики со штатом в три человека.
+                        <br><br>За 10 лет  произведено более 200 модернизаций предприятий по производству бетона и
+                        железобетона по всей территории России от Сахалина до Калининграда. Накопив бесценный опыт
+                        решения всевозможных задач, ТензоТехСервис расширила ассортимент продукции и предоставляемых
+                        услуг. На данный момент нами охвачены все сегменты предприятий ЖБИ, начиная от автовесов, цементных складов, бетоносмесительного узла, формовочного цеха, компрессорной, арматурного цеха и заканчивая оборудованием для лабораторий. Основной принцип - комплексное решение задач Заказчика, от проектирования до ввода в эксплуатацию и обслуживанию.</nobold></p>
+                    <div class="slidershares2">
+                        <div class="slides"  id="slides3">
+                            <div class="sli">
+                                <img src="images/slider2_img_1.jpg" height="100%">
+                            </div>
+                            <div class="sli">
+                                <img src="images/slider2_img_1.jpg" height="100%">
+                            </div>
+
+                        </div>
+                    </div>
+                    <p><nobold>Основным вектором развития компания выбрала собственное производство. Сегодня мы производим:
+                              бетонные заводы, автоматические системы управления бетонными заводами, весодозирующее
+                        оборудование, металлоконструкции, силовые шкафы. И этот список постоянно расширяется.</nobold>
+                    <br><br><nobold>На сегодняшний день</nobold> 90% продукции нашим клиентам отправляется из наличия.
+                    <br><br><nobold>ООО «НПО «ТензоТехСервис» входит в пятерку крупнейших производителей оборудования для
+                                 производства бетона и ЖБИ и сотрудничает с такими организациями как ”РЖД-строй”, группа компаний ПИК,СУ-155, АТОММАШКОМПЛЕКС, Камгэсстройматериалы.
+                    <br><br>Мы надеемся быть полезными при решении самых сложных и масштабных задач в области
+                            производства бетона и железобетона.</nobold></p>
+
+                    <ul class="ul"><bold>Основные виды деятельности:</bold>
+                        <br><br>
+                        <li>Производство</li>
+                        <li>Инжиниринг</li>
+                        <li>Автоматизация</li>
+                        <li>Проектирование</li>
+                        <li>Импорт оборудования</li>
+                        <li>Монтаж и ввод в эксплуатацию</li>
+                    </ul>
+                    <hr class="widthmax">
+                </div>
+
+                <div class="slide">
+                    2
+                </div>
+                <div class="slide">
+                    3
+                </div>
+                <div class="slide">
+                    4
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="bottommenu">
+    <div class="center">
+        <div class="menu">
+            <a href="#">КОМПАНИЯ</a>
+            <ul>
+                <li><a href="#"> О компании</a></li>
+                <li><a href="#">Сотрудники</a></li>
+                <li><a href="#">Принципы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">ПОМОЩЬ ПО САЙТУ</a>
+            <ul>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">База знаний</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">СПЕЦИАЛЬНЫЕ УСЛОВИЯ</a>
+            <ul>
+                <li><a href="#">Акции и скидки</a></li>
+                <li><a href="#">Склады и цены</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <a href="#">УСЛУГИ</a><br><br>
+            <a href="#">ОБОРУДОВАНИЕ</a><br><br>
+            <a href="#">ПРОЕКТЫ</a><br><br>
+            <a href="#">ГОТОВЫЕ РЕШЕНИЯ</a>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+
+    <div class="center">
+        <div class="developers">
+            <div class="logo"></div>
+            <div class="text">Разработка сайта</br> Жуков и Архангельский</div>
+        </div>
+        <div class="logo"></div>
+        <div class="telephone">+7 (843) 554-45-45<br><text>г. Казань, ул. Вахитова 10</text></div>
+    </div>
+</div>
+
+</body>
+</html>
